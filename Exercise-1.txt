@@ -19,18 +19,18 @@ tar: Removing leading `/' from member names
 /home/vagrant/altschool/misc/fileC
 vagrant@ubuntu-focal:~$ gzip /home/vagrant/altschool/misc.tar
 gzip: /home/vagrant/altschool/misc.tar.gz already exists; do you wish to overwrite (y or n)? y
-vagrant@ubuntu-focal:~$ sudo adduser nwoke
-Adding user `nwoke' ...
-Adding new group `nwoke' (1004) ...
-Adding new user `nwoke' (1004) with group `nwoke' ...
-Creating home directory `/home/nwoke' ...
+vagrant@ubuntu-focal:~$ sudo adduser toby
+Adding user `toby' ...
+Adding new group `toby' (1004) ...
+Adding new user `toby' (1004) with group `toby' ...
+Creating home directory `/home/toby' ...
 Copying files from `/etc/skel' ...
 New password:
 Retype new password:
 passwd: password updated successfully
-Changing the user information for nwoke
+Changing the user information for toby
 Enter the new value, or press ENTER for the default
-        Full Name []: Nwoke Eberechi
+        Full Name []: Ndubuaku Tobechukwu
         Room Number []: nil
         Work Phone []: nil
         Home Phone []: nil
@@ -40,7 +40,7 @@ vagrant@ubuntu-focal:~$ sudo passwd -e nwoke
 passwd: password expiry information changed.
 vagrant@ubuntu-focal:~$ ls /home
 nwoke  ubuntu  vagrant
-vagrant@ubuntu-focal:~$ su nwoke
+vagrant@ubuntu-focal:~$ su toby
 Password:
 You are required to change your password immediately (administrator enforced)
 Changing password for nwoke.
@@ -49,7 +49,7 @@ New password:
 Retype new password:
 nwoke@ubuntu-focal:/home/vagrant$ exit
 exit
-vagrant@ubuntu-focal:~$ sudo passwd -l nwoke
+vagrant@ubuntu-focal:~$ sudo passwd -l toby
 passwd: password expiry information changed.
 vagrant@ubuntu-focal:~$ sudo useradd -s /sbin/nologin username
 vagrant@ubuntu-focal:~$ sudo nano /etc/ssh/sshd_config
